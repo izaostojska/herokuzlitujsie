@@ -1,0 +1,186 @@
+body {
+    font-size: 80%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    letter-spacing: 0.15em;
+    background-color: #efefef;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    font-size: 350%;
+    text-shadow: 4px 4px 5px #91a0d6;
+  }
+  
+  #nawigacja{
+    width: 580px;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+  #li{
+    display: inline;
+    margin: 0px 30px;
+  }
+  
+  /* Style dla linków */
+  a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px 5px 18px;
+  }
+  
+  a:hover, a.active {
+    color: #3354cc;
+    background-color: #efefef;
+  }
+  
+  
+  footer {
+    background-color: #3354cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+  }
+  
+  footer .button:hover {
+    background-color: #333;
+  }
+  
+  /* Styl dla formularza */
+  form {
+    width: 50%; /* Szerokość formularza */
+    margin: 0 auto; /* Wyśrodkowanie formularza */
+    padding: 20px; /* Wewnętrzne marginesy formularza */
+    background-color: #f9f9f9; /* Kolor tła formularza */
+    border-radius: 10px; /* Zaokrąglenie rogów formularza */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień formularza */
+  }
+  
+  /* Styl dla etykiet formularza */
+  label {
+    display: block; /* Etykiety jako bloki */
+    margin-bottom: 10px; /* Margines na dole etykiety */
+  }
+  
+  /* Styl dla pól formularza */
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    width: 100%; /* Szerokość pól formularza */
+    padding: 10px; /* Wewnętrzne marginesy pól formularza */
+    margin-bottom: 10px; /* Margines na dole pól formularza */
+    border: 1px solid #ccc; /* Ramka pól formularza */
+    border-radius: 5px; /* Zaokrąglenie rogów pól formularza */
+    box-sizing: border-box; /* Ustawienie wielkości pola */
+  }
+  
+  /* Styl dla przycisku formularza */
+  input[type="submit"] {
+    width: 100%; /* Szerokość przycisku */
+    padding: 10px; /* Wewnętrzne marginesy przycisku */
+    background-color: #007bff; /* Kolor tła przycisku */
+    color: #fff; /* Kolor tekstu przycisku */
+    border: none; /* Brak obramowania przycisku */
+    border-radius: 5px; /* Zaokrąglenie rogów przycisku */
+    cursor: pointer; /* Kursor wskaźnika */
+  }
+  
+  /* Styl dla przycisku formularza po najechaniu */
+  input[type="submit"]:hover {
+    background-color: #0056b3; /* Kolor tła przycisku po najechaniu */
+  }
+  
+  .actions {
+    margin-top: 20px; /* Dodanie marginesu na górze kontenera akcji */
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .post-tile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    text-align: center;
+  }
+
+  .post-tile:hover {
+    transform: scale(1.05);
+  }
+
+  .post-image-container {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+
+  .post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .post-actions {
+    margin-top: 10px;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  .container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer .button {
+    margin: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer .button:hover {
+    background-color: #0056b3;
+  }

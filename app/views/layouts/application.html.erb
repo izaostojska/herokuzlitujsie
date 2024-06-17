@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsRuby3</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <% unless devise_controller? %>
+      <header>
+        <h1>BlogApp</h1>
+         <nav>
+            <ul id="nawigacja">
+              <%= link_to 'Home', root_path, class: ('active' if current_page?(root_path)) %>
+              <% if user_signed_in? %>
+                  <%= link_to 'New Post', new_post_path, class: ('active' if current_page?(new_post_path)) %>
+                  <%= link_to 'All Posts', posts_path, class: ('active' if current_page?(posts_path)) %>
+                <% if current_user.admin? %>
+                  <%= link_to 'Admin Panel', rails_admin_path, class: ('active' if current_page?(rails_admin_path)) %>
+                <% end %>
+              <% else %>
+                <%= link_to 'All Posts', posts_path, class: ('active' if current_page?(posts_path)) %>
+                <% end %>
+            </ul>
+          </nav>
+        </header>
+      <% end %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <% if user_signed_in? %>
+        <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'button' %>
+        <%= link_to 'New Post', new_post_path, class: 'button' %>
+      <% else %>
+        <%= link_to 'Log in', new_user_session_path, class: 'button' %>
+        <%= link_to 'Sign up', new_user_registration_path, class: 'button' %>
+      <% end %>
+    </footer>
+      </div>
+  </body>
+</html>

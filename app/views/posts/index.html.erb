@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <%= form_tag(posts_path, method: :get, class: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search posts..." %>
+          <%= submit_tag "Search" %>
+        <% end %>
+  </nav>
+</header>
+
+<div class="posts-grid">
+  <% @posts.each do |post| %>
+    <div class="post-tile">
+      <%= link_to post_path(post) do %>
+        <% if post.image.attached? %>
+          <div class="post-image-container">
+            <%= image_tag post.image, class: 'post-image' %>
+          </div>
+        <% end %>
+        <h3><%= post.title %></h3>
+        <% end %>
+      <% if current_user == post.user %>
+        <div class="post-actions">
+          <%= link_to 'Edit', edit_post_path(post) %>
+          <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
