@@ -37,9 +37,11 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post = current_user.posts.find(params[:id])
   end
 
   def update
+    @post = current_user.posts.find(params[:id])
     if @post.update(post_params)
       redirect_to @post, notice: 'Post was successfully updated.'
     else
@@ -48,9 +50,11 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = current_user.posts.find(params[:id])
+    print("metdoa")
+    @post = Post.find(params[:id])
     @post.destroy
-    redirect_to posts_path, notice: 'Post was successfully deleted.'
+
+    redirect_to root_path, status: :see_other
   end
 
   private
