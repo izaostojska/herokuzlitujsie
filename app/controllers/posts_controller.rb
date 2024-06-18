@@ -5,12 +5,14 @@ class PostsController < ApplicationController
   def index
     if params[:search].present?
       search_term = "%#{params[:search]}%"
-      @posts = Post.where(public: true)
-                   .where("title LIKE :search OR description LIKE :search", search: search_term)
-                   .or(Post.where(id: Post.joins(:tags).where(tags: { name: params[:search] }).pluck(:id)))
+      @posts = Post.where("title LIKE :search OR description LIKE :search OR id IN (?)", search: search_term, ids: Post.joins(:tags).where(tags: { name: params[:search] }).pluck(:id))
                    .distinct
     else
-      @posts = Post.where(public: true).or(Post.where(user: current_user))
+      @posts = if user_signed_in?
+                 Post.all
+               else
+                 Post.where(public: true)
+               end
     end
   end
 
@@ -67,3 +69,4 @@ class PostsController < ApplicationController
     params.require(:post).permit(:title, :description, :image, :public)
   end
 end
+
