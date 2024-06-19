@@ -4,8 +4,13 @@ Rails.application.routes.draw do
   }
 
   resources :users
+
   resources :posts do
     resources :comments, only: [:create]
+
+    member do
+      get 'download', to: 'posts#download'
+    end
   end
 
   #tylko zalogowani użytkownicy-admini mają dostęp do panelu administratora

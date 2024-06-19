@@ -11,6 +11,10 @@ module RailsRuby3
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # Create a logger with a file as a logging target
+    config.logger = Logger.new(Rails.root.join('log', 'important.log'), 'daily')
+    # Set the minimum log level
+    config.log_level = :info
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -23,4 +27,5 @@ module RailsRuby3
       'X-Frame-Options' => 'ALLOWFROM replit.com'
     }
   end
+
 end
