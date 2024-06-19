@@ -1,0 +1,380 @@
+# Logfile created on 2024-06-18 22:49:20 +0200 by logger.rb/v1.5.3
+W, [2024-06-18T22:49:21.930750 #9208]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at C:/Users/Admin/Desktop/projectblog-main/config/environment.rb:5)
+F, [2024-06-18T22:57:59.053246 #9208] FATAL -- :   
+SyntaxError (C:/Users/Admin/Desktop/projectblog-main/app/controllers/comments_controller.rb:11: syntax error, unexpected '}', expecting =>
+...ownika #' +{current_user.email} + '.'
+...                              ^
+C:/Users/Admin/Desktop/projectblog-main/app/controllers/comments_controller.rb:14: syntax error, unexpected '}', expecting =>
+...wnika #' + {current_user.email} + '.'
+...                              ^
+):
+  
+app/controllers/comments_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/comments_controller.rb:14: syntax error, unexpected '}', expecting =>
+W, [2024-06-18T23:07:59.746180 #14008]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at C:/Users/Admin/Desktop/projectblog-main/config/environment.rb:5)
+I, [2024-06-18T23:08:06.763646 #14008]  INFO -- : Started GET "/" for ::1 at 2024-06-18 23:08:06 +0200
+D, [2024-06-18T23:08:07.096260 #14008] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2024-06-18T23:08:07.416963 #14008]  INFO -- : Processing by PublicController#home as HTML
+D, [2024-06-18T23:08:07.516170 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:08:07.516951 #14008] DEBUG -- :   Rendering public/home.html.erb within layouts/application
+I, [2024-06-18T23:08:07.518953 #14008]  INFO -- :   Rendered public/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 253)
+D, [2024-06-18T23:08:07.924484 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:07.927094 #14008] DEBUG -- :   ↳ app/views/layouts/application.html.erb:17
+I, [2024-06-18T23:08:07.986590 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 469.7ms | Allocations: 139480)
+I, [2024-06-18T23:08:07.988021 #14008]  INFO -- : Completed 200 OK in 570ms (Views: 492.1ms | ActiveRecord: 7.0ms | Allocations: 149009)
+
+
+I, [2024-06-18T23:08:20.805491 #14008]  INFO -- : Started GET "/posts" for ::1 at 2024-06-18 23:08:20 +0200
+I, [2024-06-18T23:08:21.091303 #14008]  INFO -- : Processing by PostsController#index as HTML
+D, [2024-06-18T23:08:21.095898 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.097819 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:25:in `index'
+I, [2024-06-18T23:08:21.197312 #14008]  INFO -- : Wyświetlono listę postów. Szukano: , użytkownik zalogowany: true
+D, [2024-06-18T23:08:21.213723 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:08:21.214615 #14008] DEBUG -- :   Rendering posts/index.html.erb within layouts/application
+D, [2024-06-18T23:08:21.218432 #14008] DEBUG -- :   [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+D, [2024-06-18T23:08:21.219715 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:11
+D, [2024-06-18T23:08:21.304468 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.306403 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:08:21.346941 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.348864 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:08:21.397741 #14008] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.399304 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+D, [2024-06-18T23:08:21.401685 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.403591 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:08:21.405827 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.407660 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:08:21.410255 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.411427 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+D, [2024-06-18T23:08:21.413691 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.415679 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:08:21.418171 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.419756 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:08:21.422078 #14008] DEBUG -- :   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:21.423613 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+I, [2024-06-18T23:08:21.424604 #14008]  INFO -- :   Rendered posts/index.html.erb within layouts/application (Duration: 209.3ms | Allocations: 134803)
+I, [2024-06-18T23:08:21.434324 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 219.7ms | Allocations: 136248)
+I, [2024-06-18T23:08:21.435365 #14008]  INFO -- : Completed 200 OK in 343ms (Views: 230.4ms | ActiveRecord: 4.5ms | Allocations: 159227)
+
+
+I, [2024-06-18T23:08:21.488738 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMTowODo0NC4yNjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--36cda72ccc9bc688a408839459e0a98f2484ad64/turtle.jpg" for ::1 at 2024-06-18 23:08:21 +0200
+I, [2024-06-18T23:08:21.491960 #14008]  INFO -- : Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4909ae9e1965d3fb3c3e15851eaae06a38ac92f4/pobrane%20(2).jfif" for ::1 at 2024-06-18 23:08:21 +0200
+I, [2024-06-18T23:08:21.513489 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMThUMjE6MDg6NDQuMjc3WiIsInB1ciI6ImJsb2Jfa2V5In19--db1279045f92d9e663a89fb43da620925f137834/ap_1.jpg" for ::1 at 2024-06-18 23:08:21 +0200
+I, [2024-06-18T23:08:22.052287 #14008]  INFO -- : Processing by ActiveStorage::Blobs::RedirectController#show as */*
+I, [2024-06-18T23:08:22.053180 #14008]  INFO -- :   Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4909ae9e1965d3fb3c3e15851eaae06a38ac92f4", "filename"=>"pobrane (2)"}
+I, [2024-06-18T23:08:22.057776 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:08:22.058591 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-18T23:08:22.059341 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:08:22.063181 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"ap_1"}
+D, [2024-06-18T23:08:22.072398 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:22.078136 #14008] DEBUG -- : [36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: 5h03nk4u9sjybhmahlrv6qag0l27 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOV2d3TTI1ck5IVTVjMnA1WW1odFlXaHNjblkyY1dGbk1Hd3lOd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CdlluSmhibVVnSlRJNE1pVXlPUzVxWm1sbUlqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZHdiMkp5WVc1bEpUSXdKVEk0TWlVeU9TNXFabWxtQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6MjIuMDc3WiIsInB1ciI6ImJsb2Jfa2V5In19--54ed4cf1b83a1b0af7785f4cdd51b361ac8af920/pobrane%20(2).jfif)[0m
+I, [2024-06-18T23:08:22.081569 #14008]  INFO -- : Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOV2d3TTI1ck5IVTVjMnA1WW1odFlXaHNjblkyY1dGbk1Hd3lOd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CdlluSmhibVVnSlRJNE1pVXlPUzVxWm1sbUlqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZHdiMkp5WVc1bEpUSXdKVEk0TWlVeU9TNXFabWxtQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6MjIuMDc3WiIsInB1ciI6ImJsb2Jfa2V5In19--54ed4cf1b83a1b0af7785f4cdd51b361ac8af920/pobrane%20(2).jfif
+I, [2024-06-18T23:08:22.083785 #14008]  INFO -- : Completed 302 Found in 29ms (ActiveRecord: 0.2ms | Allocations: 4029)
+
+
+I, [2024-06-18T23:08:22.079087 #14008]  INFO -- : Completed 304 Not Modified in 19ms (ActiveRecord: 0.0ms | Allocations: 3154)
+
+
+I, [2024-06-18T23:08:22.082053 #14008]  INFO -- : Completed 304 Not Modified in 18ms (ActiveRecord: 0.0ms | Allocations: 3150)
+
+
+I, [2024-06-18T23:08:22.110709 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOV2d3TTI1ck5IVTVjMnA1WW1odFlXaHNjblkyY1dGbk1Hd3lOd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CdlluSmhibVVnSlRJNE1pVXlPUzVxWm1sbUlqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZHdiMkp5WVc1bEpUSXdKVEk0TWlVeU9TNXFabWxtQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6MjIuMDc3WiIsInB1ciI6ImJsb2Jfa2V5In19--54ed4cf1b83a1b0af7785f4cdd51b361ac8af920/pobrane%20(2).jfif" for ::1 at 2024-06-18 23:08:22 +0200
+I, [2024-06-18T23:08:22.362967 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as */*
+I, [2024-06-18T23:08:22.363693 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"pobrane (2)"}
+I, [2024-06-18T23:08:22.367625 #14008]  INFO -- : Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 172)
+
+
+I, [2024-06-18T23:08:48.507932 #14008]  INFO -- : Started GET "/posts/2" for ::1 at 2024-06-18 23:08:48 +0200
+I, [2024-06-18T23:08:48.781265 #14008]  INFO -- : Processing by PostsController#show as HTML
+I, [2024-06-18T23:08:48.782183 #14008]  INFO -- :   Parameters: {"id"=>"2"}
+D, [2024-06-18T23:08:48.788302 #14008] DEBUG -- :   [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:48.789474 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:88:in `set_post'
+D, [2024-06-18T23:08:48.791233 #14008] DEBUG -- :   [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:48.792263 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:35:in `show'
+I, [2024-06-18T23:08:48.793275 #14008]  INFO -- : Wyświetlono szczegóły posta o ID: 2
+D, [2024-06-18T23:08:48.797598 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:08:48.798365 #14008] DEBUG -- :   Rendering posts/show.html.erb within layouts/application
+D, [2024-06-18T23:08:48.965970 #14008] DEBUG -- :   [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = ?[0m  [["post_id", 2]]
+D, [2024-06-18T23:08:48.968112 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:6
+D, [2024-06-18T23:08:48.973537 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:48.975433 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:12
+D, [2024-06-18T23:08:48.977626 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:48.979620 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:14
+D, [2024-06-18T23:08:48.982591 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:48.984810 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:19
+D, [2024-06-18T23:08:48.987068 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:48.988378 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:19
+D, [2024-06-18T23:08:49.002037 #14008] DEBUG -- :   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+D, [2024-06-18T23:08:49.003476 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:29
+D, [2024-06-18T23:08:49.022732 #14008] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:49.024098 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:31
+D, [2024-06-18T23:08:49.025535 #14008] DEBUG -- :   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:49.026670 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:31
+I, [2024-06-18T23:08:49.034146 #14008]  INFO -- :   Rendered posts/show.html.erb within layouts/application (Duration: 234.6ms | Allocations: 47791)
+I, [2024-06-18T23:08:49.045655 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 247.3ms | Allocations: 49207)
+I, [2024-06-18T23:08:49.046909 #14008]  INFO -- : Completed 200 OK in 264ms (Views: 245.9ms | ActiveRecord: 4.1ms | Allocations: 50828)
+
+
+I, [2024-06-18T23:08:49.107643 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOV2d3TTI1ck5IVTVjMnA1WW1odFlXaHNjblkyY1dGbk1Hd3lOd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CdlluSmhibVVnSlRJNE1pVXlPUzVxWm1sbUlqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZHdiMkp5WVc1bEpUSXdKVEk0TWlVeU9TNXFabWxtQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6MjIuMDc3WiIsInB1ciI6ImJsb2Jfa2V5In19--54ed4cf1b83a1b0af7785f4cdd51b361ac8af920/pobrane%20(2).jfif" for ::1 at 2024-06-18 23:08:49 +0200
+I, [2024-06-18T23:08:49.370245 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as */*
+I, [2024-06-18T23:08:49.371089 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"pobrane (2)"}
+I, [2024-06-18T23:08:49.376359 #14008]  INFO -- : Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 146)
+
+
+I, [2024-06-18T23:08:51.837388 #14008]  INFO -- : Started GET "/posts" for ::1 at 2024-06-18 23:08:51 +0200
+I, [2024-06-18T23:08:52.088177 #14008]  INFO -- : Processing by PostsController#index as HTML
+D, [2024-06-18T23:08:52.093619 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.095549 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:25:in `index'
+I, [2024-06-18T23:08:52.096978 #14008]  INFO -- : Wyświetlono listę postów. Szukano: , użytkownik zalogowany: true
+D, [2024-06-18T23:08:52.098051 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:08:52.098803 #14008] DEBUG -- :   Rendering posts/index.html.erb within layouts/application
+D, [2024-06-18T23:08:52.100371 #14008] DEBUG -- :   [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+D, [2024-06-18T23:08:52.101524 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:11
+D, [2024-06-18T23:08:52.104913 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.107388 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:08:52.109420 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.111358 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:08:52.116376 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.117725 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+D, [2024-06-18T23:08:52.120812 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.123684 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:08:52.126117 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.127868 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:08:52.131914 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.133367 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+D, [2024-06-18T23:08:52.135780 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.138796 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:08:52.140945 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.142497 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:08:52.145540 #14008] DEBUG -- :   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.146976 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+I, [2024-06-18T23:08:52.148003 #14008]  INFO -- :   Rendered posts/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 6311)
+I, [2024-06-18T23:08:52.159947 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 7730)
+I, [2024-06-18T23:08:52.161041 #14008]  INFO -- : Completed 200 OK in 72ms (Views: 61.6ms | ActiveRecord: 1.8ms | Allocations: 8844)
+
+
+I, [2024-06-18T23:08:52.206766 #14008]  INFO -- : Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6daf07418b72db79888af1acc190df68955b7a8f/turtle.jpg" for ::1 at 2024-06-18 23:08:52 +0200
+I, [2024-06-18T23:08:52.209140 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOV2d3TTI1ck5IVTVjMnA1WW1odFlXaHNjblkyY1dGbk1Hd3lOd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CdlluSmhibVVnSlRJNE1pVXlPUzVxWm1sbUlqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZHdiMkp5WVc1bEpUSXdKVEk0TWlVeU9TNXFabWxtQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6MjIuMDc3WiIsInB1ciI6ImJsb2Jfa2V5In19--54ed4cf1b83a1b0af7785f4cdd51b361ac8af920/pobrane%20(2).jfif" for ::1 at 2024-06-18 23:08:52 +0200
+I, [2024-06-18T23:08:52.268722 #14008]  INFO -- : Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52038dad51f71fb9ceb6ac149e22aa0551fc81c6/ap_1.jpg" for ::1 at 2024-06-18 23:08:52 +0200
+I, [2024-06-18T23:08:52.772482 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as */*
+I, [2024-06-18T23:08:52.773793 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"pobrane (2)"}
+I, [2024-06-18T23:08:52.780127 #14008]  INFO -- : Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 150)
+
+
+I, [2024-06-18T23:08:52.784799 #14008]  INFO -- : Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+I, [2024-06-18T23:08:52.785663 #14008]  INFO -- :   Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6daf07418b72db79888af1acc190df68955b7a8f", "filename"=>"turtle"}
+D, [2024-06-18T23:08:52.791235 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.796290 #14008] DEBUG -- : [36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: ok6jp1wvyt8iaxcy6d1gf2inmqym (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg)[0m
+I, [2024-06-18T23:08:52.798150 #14008]  INFO -- : Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg
+I, [2024-06-18T23:08:52.799444 #14008]  INFO -- : Completed 302 Found in 13ms (ActiveRecord: 0.2ms | Allocations: 1194)
+
+
+I, [2024-06-18T23:08:52.814502 #14008]  INFO -- : Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+I, [2024-06-18T23:08:52.815327 #14008]  INFO -- :   Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52038dad51f71fb9ceb6ac149e22aa0551fc81c6", "filename"=>"ap_1"}
+D, [2024-06-18T23:08:52.819070 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+D, [2024-06-18T23:08:52.823186 #14008] DEBUG -- : [36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: isdez365oue23yuainxilgvq4lhv (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6NTIuODIyWiIsInB1ciI6ImJsb2Jfa2V5In19--4341f2113848fec6e1e57e4cdb60d11629d21db0/ap_1.jpg)[0m
+I, [2024-06-18T23:08:52.826201 #14008]  INFO -- : Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6NTIuODIyWiIsInB1ciI6ImJsb2Jfa2V5In19--4341f2113848fec6e1e57e4cdb60d11629d21db0/ap_1.jpg
+I, [2024-06-18T23:08:52.828915 #14008]  INFO -- : Completed 302 Found in 13ms (ActiveRecord: 0.1ms | Allocations: 1430)
+
+
+I, [2024-06-18T23:08:52.827216 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg" for ::1 at 2024-06-18 23:08:52 +0200
+I, [2024-06-18T23:08:52.858415 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6NTIuODIyWiIsInB1ciI6ImJsb2Jfa2V5In19--4341f2113848fec6e1e57e4cdb60d11629d21db0/ap_1.jpg" for ::1 at 2024-06-18 23:08:52 +0200
+I, [2024-06-18T23:08:53.220316 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:08:53.221084 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-18T23:08:53.225868 #14008]  INFO -- : Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 160)
+
+
+I, [2024-06-18T23:08:53.240647 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:08:53.241504 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"ap_1"}
+I, [2024-06-18T23:08:53.247634 #14008]  INFO -- : Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 156)
+
+
+I, [2024-06-18T23:10:34.263060 #14008]  INFO -- : Started GET "/users/sign_out" for ::1 at 2024-06-18 23:10:34 +0200
+I, [2024-06-18T23:10:34.641862 #14008]  INFO -- : Processing by Devise::SessionsController#destroy as HTML
+D, [2024-06-18T23:10:34.644796 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+I, [2024-06-18T23:10:34.731422 #14008]  INFO -- : Redirected to http://localhost:3000/
+I, [2024-06-18T23:10:34.732666 #14008]  INFO -- : Completed 303 See Other in 90ms (ActiveRecord: 0.2ms | Allocations: 3038)
+
+
+I, [2024-06-18T23:10:34.763216 #14008]  INFO -- : Started GET "/" for ::1 at 2024-06-18 23:10:34 +0200
+I, [2024-06-18T23:10:35.010806 #14008]  INFO -- : Processing by PublicController#home as HTML
+D, [2024-06-18T23:10:35.014869 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:10:35.015528 #14008] DEBUG -- :   Rendering public/home.html.erb within layouts/application
+I, [2024-06-18T23:10:35.016539 #14008]  INFO -- :   Rendered public/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+I, [2024-06-18T23:10:35.033281 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 1754)
+I, [2024-06-18T23:10:35.034166 #14008]  INFO -- : Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 2014)
+
+
+I, [2024-06-18T23:10:39.623458 #14008]  INFO -- : Started GET "/users/sign_in" for ::1 at 2024-06-18 23:10:39 +0200
+I, [2024-06-18T23:10:39.872768 #14008]  INFO -- : Processing by Devise::SessionsController#new as HTML
+D, [2024-06-18T23:10:39.919516 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:10:39.920384 #14008] DEBUG -- :   Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+D, [2024-06-18T23:10:39.968470 #14008] DEBUG -- :   Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 971)
+I, [2024-06-18T23:10:39.969599 #14008]  INFO -- :   Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 48.1ms | Allocations: 4494)
+I, [2024-06-18T23:10:39.979844 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 5790)
+I, [2024-06-18T23:10:39.980767 #14008]  INFO -- : Completed 200 OK in 107ms (Views: 97.5ms | ActiveRecord: 0.0ms | Allocations: 7812)
+
+
+I, [2024-06-18T23:10:51.734440 #14008]  INFO -- : Started POST "/users/sign_in" for ::1 at 2024-06-18 23:10:51 +0200
+I, [2024-06-18T23:10:51.975841 #14008]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2024-06-18T23:10:51.976763 #14008]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"iza@admin.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2024-06-18T23:10:51.985373 #14008] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "iza@admin.pl"], ["LIMIT", 1]]
+I, [2024-06-18T23:10:52.433371 #14008]  INFO -- : Completed 401 Unauthorized in 455ms (ActiveRecord: 0.3ms | Allocations: 2728)
+
+
+I, [2024-06-18T23:10:52.436767 #14008]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-18T23:10:52.437369 #14008]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"iza@admin.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2024-06-18T23:10:52.851400 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:10:52.852286 #14008] DEBUG -- :   Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+D, [2024-06-18T23:10:52.856964 #14008] DEBUG -- :   Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 115)
+I, [2024-06-18T23:10:52.857893 #14008]  INFO -- :   Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 831)
+I, [2024-06-18T23:10:52.868204 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 2083)
+I, [2024-06-18T23:10:52.869050 #14008]  INFO -- : Completed 200 OK in 431ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 2628)
+
+
+I, [2024-06-18T23:10:57.194402 #14008]  INFO -- : Started POST "/users/sign_in" for ::1 at 2024-06-18 23:10:57 +0200
+I, [2024-06-18T23:10:57.455307 #14008]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2024-06-18T23:10:57.456000 #14008]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"iza@admin.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2024-06-18T23:10:57.460973 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "iza@admin.pl"], ["LIMIT", 1]]
+I, [2024-06-18T23:10:57.904394 #14008]  INFO -- : Redirected to http://localhost:3000/
+I, [2024-06-18T23:10:57.905267 #14008]  INFO -- : Completed 303 See Other in 448ms (ActiveRecord: 0.1ms | Allocations: 3284)
+
+
+I, [2024-06-18T23:10:57.936609 #14008]  INFO -- : Started GET "/" for ::1 at 2024-06-18 23:10:57 +0200
+I, [2024-06-18T23:10:58.281954 #14008]  INFO -- : Processing by PublicController#home as HTML
+D, [2024-06-18T23:10:58.287446 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:10:58.382288 #14008] DEBUG -- :   Rendering public/home.html.erb within layouts/application
+I, [2024-06-18T23:10:58.394596 #14008]  INFO -- :   Rendered public/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+D, [2024-06-18T23:10:58.440804 #14008] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:10:58.449228 #14008] DEBUG -- :   ↳ app/views/layouts/application.html.erb:17
+I, [2024-06-18T23:10:58.451342 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 2349)
+I, [2024-06-18T23:10:58.454694 #14008]  INFO -- : Completed 200 OK in 172ms (Views: 167.9ms | ActiveRecord: 0.2ms | Allocations: 2613)
+
+
+I, [2024-06-18T23:11:02.296494 #14008]  INFO -- : Started GET "/posts" for ::1 at 2024-06-18 23:11:02 +0200
+I, [2024-06-18T23:11:02.542820 #14008]  INFO -- : Processing by PostsController#index as HTML
+D, [2024-06-18T23:11:02.546962 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.548382 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:25:in `index'
+I, [2024-06-18T23:11:02.549669 #14008]  INFO -- : Wyświetlono listę postów. Szukano: , użytkownik zalogowany: true
+D, [2024-06-18T23:11:02.550766 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:11:02.551468 #14008] DEBUG -- :   Rendering posts/index.html.erb within layouts/application
+D, [2024-06-18T23:11:02.552979 #14008] DEBUG -- :   [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+D, [2024-06-18T23:11:02.554266 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:11
+D, [2024-06-18T23:11:02.556871 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.558802 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:11:02.560558 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.562244 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:11:02.564209 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.565305 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+D, [2024-06-18T23:11:02.567869 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.569467 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:11:02.571290 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.572701 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:11:02.575505 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.576987 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+D, [2024-06-18T23:11:02.580448 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.582757 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:14
+D, [2024-06-18T23:11:02.585369 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.587683 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:16
+D, [2024-06-18T23:11:02.590167 #14008] DEBUG -- :   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:02.591384 #14008] DEBUG -- :   ↳ app/views/posts/index.html.erb:21
+I, [2024-06-18T23:11:02.592330 #14008]  INFO -- :   Rendered posts/index.html.erb within layouts/application (Duration: 40.2ms | Allocations: 6308)
+I, [2024-06-18T23:11:02.604459 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 7726)
+I, [2024-06-18T23:11:02.605517 #14008]  INFO -- : Completed 200 OK in 62ms (Views: 53.8ms | ActiveRecord: 1.4ms | Allocations: 8835)
+
+
+I, [2024-06-18T23:11:02.662564 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg" for ::1 at 2024-06-18 23:11:02 +0200
+I, [2024-06-18T23:11:02.665400 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6NTIuODIyWiIsInB1ciI6ImJsb2Jfa2V5In19--4341f2113848fec6e1e57e4cdb60d11629d21db0/ap_1.jpg" for ::1 at 2024-06-18 23:11:02 +0200
+I, [2024-06-18T23:11:02.667595 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOV2d3TTI1ck5IVTVjMnA1WW1odFlXaHNjblkyY1dGbk1Hd3lOd1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CdlluSmhibVVnSlRJNE1pVXlPUzVxWm1sbUlqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZHdiMkp5WVc1bEpUSXdKVEk0TWlVeU9TNXFabWxtQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6MjIuMDc3WiIsInB1ciI6ImJsb2Jfa2V5In19--54ed4cf1b83a1b0af7785f4cdd51b361ac8af920/pobrane%20(2).jfif" for ::1 at 2024-06-18 23:11:02 +0200
+I, [2024-06-18T23:11:03.194524 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:11:03.195662 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"ap_1"}
+I, [2024-06-18T23:11:03.200925 #14008]  INFO -- : Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms | Allocations: 150)
+
+
+I, [2024-06-18T23:11:03.204574 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as */*
+I, [2024-06-18T23:11:03.205787 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"pobrane (2)"}
+I, [2024-06-18T23:11:03.212244 #14008]  INFO -- : Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 150)
+
+
+I, [2024-06-18T23:11:03.216641 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:11:03.219113 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-18T23:11:03.224173 #14008]  INFO -- : Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 146)
+
+
+I, [2024-06-18T23:11:03.778632 #14008]  INFO -- : Started GET "/posts/1" for ::1 at 2024-06-18 23:11:03 +0200
+I, [2024-06-18T23:11:04.036165 #14008]  INFO -- : Processing by PostsController#show as HTML
+I, [2024-06-18T23:11:04.036876 #14008]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2024-06-18T23:11:04.041348 #14008] DEBUG -- :   [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.043262 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:88:in `set_post'
+D, [2024-06-18T23:11:04.044606 #14008] DEBUG -- :   [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.045598 #14008] DEBUG -- :   ↳ app/controllers/posts_controller.rb:35:in `show'
+I, [2024-06-18T23:11:04.046662 #14008]  INFO -- : Wyświetlono szczegóły posta o ID: 1
+D, [2024-06-18T23:11:04.047677 #14008] DEBUG -- :   Rendering layout layouts/application.html.erb
+D, [2024-06-18T23:11:04.048329 #14008] DEBUG -- :   Rendering posts/show.html.erb within layouts/application
+D, [2024-06-18T23:11:04.050967 #14008] DEBUG -- :   [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = ?[0m  [["post_id", 1]]
+D, [2024-06-18T23:11:04.054675 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:6
+D, [2024-06-18T23:11:04.057886 #14008] DEBUG -- :   [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.060078 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:12
+D, [2024-06-18T23:11:04.062620 #14008] DEBUG -- :   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.064024 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:14
+D, [2024-06-18T23:11:04.066435 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.069766 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:19
+D, [2024-06-18T23:11:04.071860 #14008] DEBUG -- :   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.073023 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:19
+D, [2024-06-18T23:11:04.075088 #14008] DEBUG -- :   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+D, [2024-06-18T23:11:04.076915 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:29
+D, [2024-06-18T23:11:04.078865 #14008] DEBUG -- :   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.080189 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:31
+D, [2024-06-18T23:11:04.081679 #14008] DEBUG -- :   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+D, [2024-06-18T23:11:04.082622 #14008] DEBUG -- :   ↳ app/views/posts/show.html.erb:31
+I, [2024-06-18T23:11:04.085219 #14008]  INFO -- :   Rendered posts/show.html.erb within layouts/application (Duration: 36.2ms | Allocations: 5281)
+I, [2024-06-18T23:11:04.098019 #14008]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 6697)
+I, [2024-06-18T23:11:04.099437 #14008]  INFO -- : Completed 200 OK in 62ms (Views: 50.6ms | ActiveRecord: 1.5ms | Allocations: 7631)
+
+
+I, [2024-06-18T23:11:04.153130 #14008]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg" for ::1 at 2024-06-18 23:11:04 +0200
+I, [2024-06-18T23:11:04.380188 #14008]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:11:04.381212 #14008]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-18T23:11:04.386561 #14008]  INFO -- : Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 146)
+
+
+W, [2024-06-18T23:12:01.461453 #10672]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at C:/Users/Admin/Desktop/projectblog-main/config/environment.rb:5)
+W, [2024-06-18T23:12:26.611095 #13644]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at C:/Users/Admin/Desktop/projectblog-main/config/environment.rb:5)
+I, [2024-06-18T23:12:29.493084 #13644]  INFO -- : Started GET "/" for ::1 at 2024-06-18 23:12:29 +0200
+I, [2024-06-18T23:12:30.108779 #13644]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-18T23:12:30.554536 #13644]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 342.6ms | Allocations: 58503)
+I, [2024-06-18T23:12:30.555697 #13644]  INFO -- : Completed 200 OK in 446ms (Views: 374.3ms | ActiveRecord: 0.0ms | Allocations: 68017)
+
+
+I, [2024-06-18T23:12:32.374823 #13644]  INFO -- : Started GET "/posts" for ::1 at 2024-06-18 23:12:32 +0200
+I, [2024-06-18T23:12:32.686752 #13644]  INFO -- : Processing by PostsController#index as HTML
+I, [2024-06-18T23:12:32.773137 #13644]  INFO -- : Wyświetlono listę postów. Szukano: , użytkownik zalogowany: false
+I, [2024-06-18T23:12:33.109481 #13644]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 322.3ms | Allocations: 216187)
+I, [2024-06-18T23:12:33.110526 #13644]  INFO -- : Completed 200 OK in 423ms (Views: 329.4ms | ActiveRecord: 11.8ms | Allocations: 233802)
+
+
+I, [2024-06-18T23:12:33.183670 #13644]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg" for ::1 at 2024-06-18 23:12:33 +0200
+I, [2024-06-18T23:12:33.188194 #13644]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMThUMjE6MTM6NTIuODIyWiIsInB1ciI6ImJsb2Jfa2V5In19--4341f2113848fec6e1e57e4cdb60d11629d21db0/ap_1.jpg" for ::1 at 2024-06-18 23:12:33 +0200
+I, [2024-06-18T23:12:33.592038 #13644]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:12:33.593576 #13644]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-18T23:12:33.592805 #13644]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:12:33.597053 #13644]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"ap_1"}
+I, [2024-06-18T23:12:33.604198 #13644]  INFO -- : Completed 304 Not Modified in 10ms (ActiveRecord: 0.0ms | Allocations: 1090)
+
+
+I, [2024-06-18T23:12:33.604608 #13644]  INFO -- : Completed 304 Not Modified in 7ms (ActiveRecord: 0.0ms | Allocations: 994)
+
+
+I, [2024-06-18T23:13:09.513298 #13644]  INFO -- : Started GET "/posts/1" for ::1 at 2024-06-18 23:13:09 +0200
+I, [2024-06-18T23:13:09.793158 #13644]  INFO -- : Processing by PostsController#show as HTML
+I, [2024-06-18T23:13:09.794062 #13644]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2024-06-18T23:13:09.800113 #13644]  INFO -- : Wyświetlono szczegóły posta o ID: 1
+I, [2024-06-18T23:13:10.028609 #13644]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 224.0ms | Allocations: 46142)
+I, [2024-06-18T23:13:10.029747 #13644]  INFO -- : Completed 200 OK in 235ms (Views: 222.8ms | ActiveRecord: 3.0ms | Allocations: 47218)
+
+
+I, [2024-06-18T23:13:10.074326 #13644]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOFQyMToxMzo1Mi43OTVaIiwicHVyIjoiYmxvYl9rZXkifX0=--2cb7cc7965b18e1a649e38058ef10bd40304e821/turtle.jpg" for ::1 at 2024-06-18 23:13:10 +0200
+I, [2024-06-18T23:13:10.340862 #13644]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-18T23:13:10.341617 #13644]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-18T23:13:10.345978 #13644]  INFO -- : Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms | Allocations: 148)
+
+
