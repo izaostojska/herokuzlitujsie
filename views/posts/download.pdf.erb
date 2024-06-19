@@ -1,0 +1,24 @@
+<div class="post-container">
+  <div class="post-header">
+    <h1 class="post-title"><%= @post.title %></h1>
+  </div>
+
+  <div class="post-body">
+    <p class="post-description"><%= @post.description %></p>
+    
+    <% if @post.tags.any? %>
+      <div class="post-tags">
+        <h3>Tags:</h3>
+        <% @post.tags.each do |tag| %>
+          <span class="post-tag"><%= tag.name %></span>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <% if @post.image.attached? %>
+    <div class="post-image">
+      <%= image_tag url_for(@post.image), style: 'width: 100%; max-width: 600px;' %>
+    </div>
+  <% end %>
+</div>
