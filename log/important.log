@@ -378,3 +378,238 @@ I, [2024-06-18T23:13:10.341617 #13644]  INFO -- :   Parameters: {"encoded_key"=>
 I, [2024-06-18T23:13:10.345978 #13644]  INFO -- : Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms | Allocations: 148)
 
 
+W, [2024-06-19T10:37:30.427147 #5718]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/runner/herokuzlitujsie/config/environment.rb:5)
+I, [2024-06-19T10:37:32.718404 #5718]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 10:37:32 +0000
+I, [2024-06-19T10:37:32.719676 #5718]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T10:37:32.840445 #5718]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T10:37:34.788778 #5718]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 1911.0ms | Allocations: 301536)
+I, [2024-06-19T10:37:34.789108 #5718]  INFO -- : Completed 200 OK in 1949ms (Views: 1918.2ms | ActiveRecord: 0.0ms | Allocations: 315793)
+
+
+I, [2024-06-19T10:37:34.925693 #5718]  INFO -- : Started GET "/assets/application.debug-9239edb8259c99def8d41b22fcedd71349f7255b045ffe554e9b084e3e8a32c4.css" for 109.231.2.96 at 2024-06-19 10:37:34 +0000
+I, [2024-06-19T10:37:34.926013 #5718]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+W, [2024-06-19T10:43:25.720148 #5780]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/runner/herokuzlitujsie/config/environment.rb:5)
+I, [2024-06-19T10:43:28.806620 #5780]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 10:43:28 +0000
+I, [2024-06-19T10:43:28.807595 #5780]  INFO -- : Cannot render console from 10.81.9.10! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T10:43:28.926743 #5780]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T10:43:29.080969 #5780]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 123.1ms | Allocations: 55366)
+I, [2024-06-19T10:43:29.081293 #5780]  INFO -- : Completed 200 OK in 154ms (Views: 126.5ms | ActiveRecord: 0.0ms | Allocations: 64238)
+
+
+I, [2024-06-19T10:46:03.899111 #5780]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 10:46:03 +0000
+I, [2024-06-19T10:46:03.899599 #5780]  INFO -- : Cannot render console from 10.81.9.10! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T10:46:03.905439 #5780]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T10:46:03.907770 #5780]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1437)
+I, [2024-06-19T10:46:03.907960 #5780]  INFO -- : Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1659)
+
+
+I, [2024-06-19T10:46:17.929480 #5780]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 10:46:17 +0000
+I, [2024-06-19T10:46:17.930498 #5780]  INFO -- : Cannot render console from 10.81.21.10! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T10:46:17.939041 #5780]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T10:46:17.950629 #5780]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1436)
+I, [2024-06-19T10:46:17.950917 #5780]  INFO -- : Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 1657)
+
+
+I, [2024-06-19T10:46:18.128116 #5780]  INFO -- : Started GET "/assets/application.debug-9239edb8259c99def8d41b22fcedd71349f7255b045ffe554e9b084e3e8a32c4.css" for 109.231.2.96 at 2024-06-19 10:46:18 +0000
+I, [2024-06-19T10:46:18.128621 #5780]  INFO -- : Cannot render console from 10.81.21.10! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+W, [2024-06-19T10:46:44.555149 #6015]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/runner/herokuzlitujsie/config/environment.rb:5)
+I, [2024-06-19T10:46:45.920497 #6015]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 10:46:45 +0000
+I, [2024-06-19T10:46:45.921360 #6015]  INFO -- : Cannot render console from 10.81.9.10! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T10:46:46.012131 #6015]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T10:46:46.160106 #6015]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 138.4ms | Allocations: 55406)
+I, [2024-06-19T10:46:46.160493 #6015]  INFO -- : Completed 200 OK in 148ms (Views: 141.5ms | ActiveRecord: 0.0ms | Allocations: 64269)
+
+
+I, [2024-06-19T10:46:59.358645 #6015]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 10:46:59 +0000
+I, [2024-06-19T10:46:59.359219 #6015]  INFO -- : Cannot render console from 10.81.21.10! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T10:46:59.365738 #6015]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T10:46:59.369889 #6015]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2735)
+I, [2024-06-19T10:46:59.370070 #6015]  INFO -- : Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2957)
+
+
+W, [2024-06-19T12:58:41.518045 #143]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/runner/herokuzlitujsie/config/environment.rb:5)
+I, [2024-06-19T12:58:43.881101 #143]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 12:58:43 +0000
+I, [2024-06-19T12:58:43.882107 #143]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T12:58:44.050750 #143]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T12:58:44.219831 #143]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 147.7ms | Allocations: 55362)
+I, [2024-06-19T12:58:44.220361 #143]  INFO -- : Completed 200 OK in 169ms (Views: 155.8ms | ActiveRecord: 0.0ms | Allocations: 64234)
+
+
+I, [2024-06-19T12:58:44.424700 #143]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 12:58:44 +0000
+I, [2024-06-19T12:58:44.425871 #143]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T12:58:44.433859 #143]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T12:58:44.439136 #143]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2631)
+I, [2024-06-19T12:58:44.439354 #143]  INFO -- : Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2853)
+
+
+W, [2024-06-19T12:59:34.852887 #203]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/runner/herokuzlitujsie/config/environment.rb:5)
+I, [2024-06-19T12:59:36.151163 #203]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 12:59:36 +0000
+I, [2024-06-19T12:59:36.152168 #203]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T12:59:36.261854 #203]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T12:59:36.384151 #203]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 111.4ms | Allocations: 55396)
+I, [2024-06-19T12:59:36.384713 #203]  INFO -- : Completed 200 OK in 123ms (Views: 114.6ms | ActiveRecord: 0.0ms | Allocations: 64259)
+
+
+I, [2024-06-19T12:59:36.453773 #203]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 12:59:36 +0000
+I, [2024-06-19T12:59:36.454413 #203]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T12:59:36.460809 #203]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T12:59:36.464696 #203]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2619)
+I, [2024-06-19T12:59:36.464874 #203]  INFO -- : Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2837)
+
+
+I, [2024-06-19T12:59:42.991849 #203]  INFO -- : Started GET "/users/sign_in" for 109.231.2.96 at 2024-06-19 12:59:42 +0000
+I, [2024-06-19T12:59:42.992814 #203]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T12:59:43.002875 #203]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-19T12:59:43.127527 #203]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 6611)
+I, [2024-06-19T12:59:43.128669 #203]  INFO -- : Completed 200 OK in 126ms (Views: 18.3ms | ActiveRecord: 3.0ms | Allocations: 83825)
+
+
+W, [2024-06-19T13:00:14.861550 #289]  WARN -- : DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /home/runner/herokuzlitujsie/config/environment.rb:5)
+I, [2024-06-19T13:00:15.771116 #289]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 13:00:15 +0000
+I, [2024-06-19T13:00:15.772093 #289]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:15.876215 #289]  INFO -- : Processing by PublicController#home as */*
+I, [2024-06-19T13:00:16.000061 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 112.4ms | Allocations: 55487)
+I, [2024-06-19T13:00:16.000446 #289]  INFO -- : Completed 200 OK in 124ms (Views: 116.4ms | ActiveRecord: 0.0ms | Allocations: 64350)
+
+
+I, [2024-06-19T13:00:17.084420 #289]  INFO -- : Started GET "/users/sign_in" for 109.231.2.96 at 2024-06-19 13:00:17 +0000
+I, [2024-06-19T13:00:17.085027 #289]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:17.092406 #289]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-19T13:00:17.212783 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5645)
+I, [2024-06-19T13:00:17.213104 #289]  INFO -- : Completed 200 OK in 121ms (Views: 10.3ms | ActiveRecord: 2.2ms | Allocations: 83182)
+
+
+I, [2024-06-19T13:00:22.145630 #289]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 13:00:22 +0000
+I, [2024-06-19T13:00:22.146274 #289]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:22.154355 #289]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T13:00:22.157259 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1530)
+I, [2024-06-19T13:00:22.157430 #289]  INFO -- : Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1753)
+
+
+I, [2024-06-19T13:00:24.405642 #289]  INFO -- : Started GET "/posts" for 109.231.2.96 at 2024-06-19 13:00:24 +0000
+I, [2024-06-19T13:00:24.406211 #289]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:24.415601 #289]  INFO -- : Processing by PostsController#index as HTML
+I, [2024-06-19T13:00:24.586005 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 87.7ms | Allocations: 135349)
+I, [2024-06-19T13:00:24.586298 #289]  INFO -- : Completed 200 OK in 171ms (Views: 84.3ms | ActiveRecord: 4.5ms | Allocations: 165460)
+
+
+I, [2024-06-19T13:00:24.773434 #289]  INFO -- : Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--af706d704f837817f1fb7a07023be31381b80cc4/turtle.jpg" for 109.231.2.96 at 2024-06-19 13:00:24 +0000
+I, [2024-06-19T13:00:24.773876 #289]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:24.785497 #289]  INFO -- : Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+I, [2024-06-19T13:00:24.785622 #289]  INFO -- :   Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--af706d704f837817f1fb7a07023be31381b80cc4", "filename"=>"turtle"}
+I, [2024-06-19T13:00:24.789308 #289]  INFO -- : Redirected to https://c52ac107-e3f5-479b-b049-8eef12a9386b-00-3tucrj3u4yixi.riker.replit.dev/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOVQxMzowNToyNC43ODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--f01166b2ef141f0c31fd4c19d4808f2691251cf1/turtle.jpg
+I, [2024-06-19T13:00:24.789442 #289]  INFO -- : Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2000)
+
+
+I, [2024-06-19T13:00:24.844231 #289]  INFO -- : Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1c8c9e7084c3386154801bf40fd06c370d2829a8/ap_1.jpg" for 109.231.2.96 at 2024-06-19 13:00:24 +0000
+I, [2024-06-19T13:00:24.844922 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:24.851927 #289]  INFO -- : Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+I, [2024-06-19T13:00:24.852006 #289]  INFO -- :   Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1c8c9e7084c3386154801bf40fd06c370d2829a8", "filename"=>"ap_1"}
+I, [2024-06-19T13:00:24.853141 #289]  INFO -- : Redirected to https://c52ac107-e3f5-479b-b049-8eef12a9386b-00-3tucrj3u4yixi.riker.replit.dev/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMTlUMTM6MDU6MjQuODUyWiIsInB1ciI6ImJsb2Jfa2V5In19--b1464922eb550d5bddcce72408e92143fdc32b55/ap_1.jpg
+I, [2024-06-19T13:00:24.853318 #289]  INFO -- : Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 392)
+
+
+I, [2024-06-19T13:00:24.927273 #289]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiMnMyYW5BeGQzWjVkRGhwWVhoamVUWmtNV2RtTW1sdWJYRjViUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUDJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5SMWNuUnNaUzVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozUjFjblJzWlM1cWNHY0dPd1pVT2hGamIyNTBaVzUwWDNSNWNHVkpJZzlwYldGblpTOXFjR1ZuQmpzR1ZEb1JjMlZ5ZG1salpWOXVZVzFsT2dwc2IyTmhiQT09IiwiZXhwIjoiMjAyNC0wNi0xOVQxMzowNToyNC43ODhaIiwicHVyIjoiYmxvYl9rZXkifX0=--f01166b2ef141f0c31fd4c19d4808f2691251cf1/turtle.jpg" for 109.231.2.96 at 2024-06-19 13:00:24 +0000
+I, [2024-06-19T13:00:24.928050 #289]  INFO -- : Cannot render console from 10.81.14.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:24.937767 #289]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-19T13:00:24.937860 #289]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"turtle"}
+I, [2024-06-19T13:00:24.938753 #289]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 552)
+
+
+I, [2024-06-19T13:00:25.000136 #289]  INFO -- : Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhhWE5rWlhvek5qVnZkV1V5TTNsMVlXbHVlR2xzWjNaeE5HeG9kZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1Gd1h6RXVhbkJuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkaGNGOHhMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVT2hGelpYSjJhV05sWDI1aGJXVTZDbXh2WTJGcyIsImV4cCI6IjIwMjQtMDYtMTlUMTM6MDU6MjQuODUyWiIsInB1ciI6ImJsb2Jfa2V5In19--b1464922eb550d5bddcce72408e92143fdc32b55/ap_1.jpg" for 109.231.2.96 at 2024-06-19 13:00:25 +0000
+I, [2024-06-19T13:00:25.000660 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:25.006890 #289]  INFO -- : Processing by ActiveStorage::DiskController#show as JPEG
+I, [2024-06-19T13:00:25.006961 #289]  INFO -- :   Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"ap_1"}
+I, [2024-06-19T13:00:25.007608 #289]  INFO -- : Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 464)
+
+
+I, [2024-06-19T13:00:26.677609 #289]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 13:00:26 +0000
+I, [2024-06-19T13:00:26.678097 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:26.684516 #289]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T13:00:26.687221 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1544)
+I, [2024-06-19T13:00:26.687427 #289]  INFO -- : Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1764)
+
+
+I, [2024-06-19T13:00:28.748764 #289]  INFO -- : Started GET "/users/sign_in" for 109.231.2.96 at 2024-06-19 13:00:28 +0000
+I, [2024-06-19T13:00:28.749371 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:28.755248 #289]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-19T13:00:28.758961 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1952)
+I, [2024-06-19T13:00:28.759155 #289]  INFO -- : Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2536)
+
+
+I, [2024-06-19T13:00:35.702206 #289]  INFO -- : Started GET "/users/sign_up" for 109.231.2.96 at 2024-06-19 13:00:35 +0000
+I, [2024-06-19T13:00:35.702641 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:35.714984 #289]  INFO -- : Processing by Users::RegistrationsController#new as HTML
+I, [2024-06-19T13:00:35.725686 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4907)
+I, [2024-06-19T13:00:35.725962 #289]  INFO -- : Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5957)
+
+
+I, [2024-06-19T13:00:38.404122 #289]  INFO -- : Started GET "/users/sign_in" for 109.231.2.96 at 2024-06-19 13:00:38 +0000
+I, [2024-06-19T13:00:38.405027 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:38.411795 #289]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-19T13:00:38.415669 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1951)
+I, [2024-06-19T13:00:38.416147 #289]  INFO -- : Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2523)
+
+
+I, [2024-06-19T13:00:45.031368 #289]  INFO -- : Started POST "/users/sign_in" for 109.231.2.96 at 2024-06-19 13:00:45 +0000
+I, [2024-06-19T13:00:45.031947 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:45.053867 #289]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2024-06-19T13:00:45.053975 #289]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"usersruser@user.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2024-06-19T13:00:45.057599 #289]  INFO -- : Completed 401 Unauthorized in 4ms (ActiveRecord: 0.1ms | Allocations: 1456)
+
+
+I, [2024-06-19T13:00:45.059048 #289]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-19T13:00:45.059130 #289]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"usersruser@user.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2024-06-19T13:00:45.313880 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1970)
+I, [2024-06-19T13:00:45.314103 #289]  INFO -- : Completed 200 OK in 255ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3970)
+
+
+I, [2024-06-19T13:00:49.814263 #289]  INFO -- : Started POST "/users/sign_in" for 109.231.2.96 at 2024-06-19 13:00:49 +0000
+I, [2024-06-19T13:00:49.814862 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:49.821156 #289]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2024-06-19T13:00:49.821251 #289]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"usersruser@user.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2024-06-19T13:00:49.822991 #289]  INFO -- : Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms | Allocations: 551)
+
+
+I, [2024-06-19T13:00:49.823716 #289]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2024-06-19T13:00:49.823794 #289]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"usersruser@user.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2024-06-19T13:00:50.077548 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1955)
+I, [2024-06-19T13:00:50.077764 #289]  INFO -- : Completed 200 OK in 254ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2394)
+
+
+I, [2024-06-19T13:00:51.542111 #289]  INFO -- : Started GET "/users/sign_up" for 109.231.2.96 at 2024-06-19 13:00:51 +0000
+I, [2024-06-19T13:00:51.542780 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:00:51.550480 #289]  INFO -- : Processing by Users::RegistrationsController#new as HTML
+I, [2024-06-19T13:00:51.556327 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2142)
+I, [2024-06-19T13:00:51.556555 #289]  INFO -- : Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2707)
+
+
+I, [2024-06-19T13:01:02.828648 #289]  INFO -- : Started POST "/users" for 109.231.2.96 at 2024-06-19 13:01:02 +0000
+I, [2024-06-19T13:01:02.829090 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:01:02.835796 #289]  INFO -- : Processing by Users::RegistrationsController#create as HTML
+I, [2024-06-19T13:01:02.835912 #289]  INFO -- :   Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"usersruserr@user.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Sign up"}
+I, [2024-06-19T13:01:03.117937 #289]  INFO -- : Redirected to https://c52ac107-e3f5-479b-b049-8eef12a9386b-00-3tucrj3u4yixi.riker.replit.dev/
+I, [2024-06-19T13:01:03.118058 #289]  INFO -- : Completed 303 See Other in 282ms (ActiveRecord: 29.5ms | Allocations: 5635)
+
+
+I, [2024-06-19T13:01:03.278188 #289]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 13:01:03 +0000
+I, [2024-06-19T13:01:03.278824 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:01:03.284937 #289]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T13:01:03.288536 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1794)
+I, [2024-06-19T13:01:03.288729 #289]  INFO -- : Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 2009)
+
+
+I, [2024-06-19T13:01:04.435716 #289]  INFO -- : Started GET "/posts/new" for 109.231.2.96 at 2024-06-19 13:01:04 +0000
+I, [2024-06-19T13:01:04.436445 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:01:04.442610 #289]  INFO -- : Processing by PostsController#new as HTML
+I, [2024-06-19T13:01:04.470685 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 15164)
+I, [2024-06-19T13:01:04.470963 #289]  INFO -- : Completed 200 OK in 28ms (Views: 18.5ms | ActiveRecord: 1.1ms | Allocations: 19443)
+
+
+I, [2024-06-19T13:01:07.836009 #289]  INFO -- : Started GET "/" for 109.231.2.96 at 2024-06-19 13:01:07 +0000
+I, [2024-06-19T13:01:07.836906 #289]  INFO -- : Cannot render console from 10.81.13.9! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+I, [2024-06-19T13:01:07.842600 #289]  INFO -- : Processing by PublicController#home as HTML
+I, [2024-06-19T13:01:07.845991 #289]  INFO -- :   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1759)
+I, [2024-06-19T13:01:07.846160 #289]  INFO -- : Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 1974)
+
+
